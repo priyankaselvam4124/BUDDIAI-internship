@@ -10,13 +10,9 @@ This code conducts a grid search to find the optimal values for b1 and b2, minim
 
 This Monte Carlo simulation estimates the value of pi by simulating dart throws onto a unit square containing a unit circle. The probability of a dart landing inside the circle is pi/4, and pi can be approximated as 4 times this probability. The graph illustrates the estimated value of pi based on the total number of darts thrown onto the unit square.
 
-\(P(\text{darts falling into unit circle}) = \frac{\text{number of darts inside the unit circle}}{\text{Total number of darts}} = \frac{\text{area}(unit circle)}{\text{area}(square)} = \frac{\pi \cdot \left(\frac{a^2}{2}\right)}{a^2} = \frac{\pi}{4}\)
+P(darts falling into unit circle)= number of darts inside the unit circle/Total number of darts=area(unit circle)/area(square)=pi*((a2)/2)/a2=pi/4
 
-Hence, \( \pi = P(\text{darts falling into the unit circle}) \times 4 \)
-
-Where \( \pi_{\text{cap}} = \left(\frac{\text{number of darts inside the unit circle}}{\text{Total number of darts}}\right) \times 4 \)
-
-This \( \pi_{\text{cap}} \) serves as the estimated value of pi, which may vary with different total numbers of darts.
+Therefore, pi=P(darts falling into the unit circle)*4 pi_cap=(number of darts inside the unit circle/Total number of darts)*4
 
 *Upcoming: Smoothing the curve (previously implemented using Google Sheets) and Multiprocessing*
 
@@ -26,7 +22,7 @@ Random values, representing where the darts land on the unit square, are generat
 
 ### Utilizing random samples from a normal distribution
 
-Random values, determining the dart landing points on the unit square, are obtained by sampling from a normal distribution. This method yields randomized values, potentially centered on the unit circle if the standard deviation is 1. Increasing the standard deviation broadens the distribution, allowing points to fall across the unit circle and aiding in the convergence of \( \pi_{\text{cap}} \).
+Random values, determining the dart landing points on the unit square, are obtained by sampling from a normal distribution. This method yields randomized values, potentially centered on the unit circle if the standard deviation is 1. Increasing the standard deviation broadens the distribution, allowing points to fall across the unit circle and aiding in the convergence of the pi value
 
 ## Random Sampler
 
